@@ -59,7 +59,14 @@ html , body{
 #all-songs{
     /* background-color: red; */
     height: 85%;
+    width: 80%;
     margin-top: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* background-color: red; */
+}
+#all-songs::-webkit-scrollbar{
+    display: none;
 }
 .song-card{
     display: flex;
@@ -149,7 +156,7 @@ html , body{
     letter-spacing: 0.5px;
 }
     #main #left{
-        height: 40%;
+        height: 38%;
         width: 100%;
     }
     #main #right{
@@ -160,6 +167,7 @@ html , body{
         margin-top: 10px;
     }
     #all-songs{
+        width: 100%;
         margin-top: 15px;
     }
     .song-card{
@@ -179,11 +187,11 @@ html , body{
     font-size: 14px;
 }
 #player{
-    height: 7vh;
+    height: 10vh;
     position: absolute;
     bottom: 0.5%;
 }
 #player h3 i{
-    font-size: 20px;
+    font-size: 30px;
 }
 }

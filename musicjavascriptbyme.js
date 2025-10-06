@@ -1,21 +1,75 @@
 var arr=[
     {
-        song:"Jale 2",
-        url:"songs/Jale 2.mp3",
-        image:"images/jale.jpg",
-        duration:"2:39",
-    },
-    {
         song:"Pehle Bhi Main",
         url:"songs/Pehle Bhi Main.mp3",
         image:"images/animal.jpg",
         duration:"4:10",
     },
     {
+        song:"Barbaad",
+        url:"songs/Barbaad (PenduJatt.Com.Se).mp3",
+        image:"images/barbaad.webp",
+        duration:"5:34",
+    },
+    {
+        song:"Zamana Lage",
+        url:"songs/Zamaana Lage (PenduJatt.Com.Se).mp3",
+        image:"images/zamaana-lage-from-metro-in-dino-pritam.webp",
+        duration:"2:44",
+    },
+     {
+        song:"Winning Speech",
+        url:"songs/Winning Speech - Karan Aujla.mp3",
+        image:"images/winning-speech-karan-aujla.webp",
+        duration:"3:39",
+    },
+     {
+        song:"Panwadi",
+        url:"songs/Panwadi (PenduJatt.Com.Se).mp3",
+        image:"images/panwadi-from-sunny-sanskari-ki-tulsi-kumari-khesari-lal-yadav.webp",
+        duration:"4:34",
+    },
+    {
+        song:"Wavy",
+        url:"songs/Wavy - Karan Aujla.mp3",
+        image:"images/wavy-karan-aujla.webp",
+        duration:"4:15",
+    },
+     {
+        song:"Dhun",
+        url:"songs/Dhun (PenduJatt.Com.Se).mp3",
+        image:"images/dhun.webp",
+        duration:"3:24",
+    },
+     {
+        song:"Saiyaara",
+        url:"songs/Saiyaara (PenduJatt.Com.Se).mp3",
+        image:"images/saiyara.webp",
+        duration:"3:54",
+    },
+    {
+        song:"Jale 2",
+        url:"songs/Jale 2.mp3",
+        image:"images/jale.jpg",
+        duration:"2:39",
+    },
+     {
+        song:"Courtside",
+        url:"C:/Users/MICRO/Desktop/MERN15/SHERY YT/WEB D LEVEL 2/level2/youtubemusic/songs/Courtside - Karan Aujla.mp3",
+        image:"images/courtside-karan-aujla.webp",
+        duration:"2:34",
+    },
+    {
         song:"Ram Siya Ram",
         url:"songs/Ram Siya Ram.mp3",
         image:"images/ram.jpg",
         duration:"3:50",
+    },
+     {
+        song:"Desi Kalakar",
+        url:"songs/Desi Kalakaar (PenduJatt.Com.Se).mp3",
+        image:"images/desi.jpg",
+        duration:"6:30",
     },
     {
         song:"Arjan Vailly Ne",
@@ -29,6 +83,19 @@ var arr=[
         image:"images/anuv.jpg",
         duration:"5:07",
     },
+     {
+        song:"Aavan Javan",
+        url:"songs/Aavan Jaavan War 2 128 Kbps.mp3",
+        image:"images/aavan-jaavan-from-war-2-pritam.webp",
+        duration:"3:45",
+    },
+    {
+        song:"Admiring You",
+        url:"songs/Admirin You - Karan Aujla.mp3",
+        image:"images/courtside-karan-aujla.webp",
+        duration:"3:48",
+    },
+    
 ]
 //Always Remember / during the selection not \(backword slash)
 var allSongs=document.querySelector("#all-songs")
