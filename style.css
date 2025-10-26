@@ -55,7 +55,18 @@ html , body{
 #right h3{
     font-size: 40px;
 }
-
+#upper{
+    display: flex;
+    gap: 40px;
+}
+#upper input{
+    width: 250px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    padding: 10px 20px;
+}
 #all-songs{
     /* background-color: red; */
     height: 85%;
@@ -63,6 +74,8 @@ html , body{
     margin-top: 20px;
     overflow-x: hidden;
     overflow-y: auto;
+    color: white;
+    font-size: 30px;
     /* background-color: red; */
 }
 #all-songs::-webkit-scrollbar{
@@ -163,8 +176,19 @@ html , body{
         height: 60%;
         width: 100%;
     }
+    #upper input{
+     height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+}
     #right h3{
         margin-top: 10px;
+        display: none;
     }
     #all-songs{
         width: 100%;

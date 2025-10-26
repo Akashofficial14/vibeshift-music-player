@@ -105,9 +105,9 @@ var backward=document.querySelector("#backward")
 var forward=document.querySelector("#forward")
 var audio=new Audio()
 var selectedSong=0  //isme jis gaane par click hoga uski id aayegi save hogi fir uska image or url sab use kar lo
-function mainFunction(){
+function mainFunction(songArr=arr){
 var clutter=""
-arr.forEach(function(obj,idx){
+songArr.forEach(function(obj,idx){
     clutter+=`<div class="song-card" id=${idx}>
     <div class="part1">
         <img src=${obj.image} alt="">
@@ -124,7 +124,6 @@ allSongs.innerHTML=clutter
 }
 mainFunction()
 
-
 //Event Bubbling-
 allSongs.addEventListener("click",function(dets){
 //all songs ke andar kisko target kar rhe 
@@ -137,7 +136,6 @@ allSongs.addEventListener("click",function(dets){
      //isse play pause wali problem solve ho jayegi
  }
 })
-
 
 function playThroughBtn(){
     var flag=0
@@ -177,3 +175,17 @@ backward.addEventListener("click",function(){
 })
 }
 playThroughBtn()
+
+//filtering Songs
+var input=document.querySelector("#upper input")
+input.addEventListener("input",function(){
+    var inp=input.value.toLowerCase()
+   var filteredSongArr=arr.filter(function(obj){
+    return obj.song.toLowerCase().startsWith(inp)
+   })
+    allSongs.innerHTML=""
+   mainFunction(filteredSongArr)
+   if(filteredSongArr.length==0){
+    allSongs.innerHTML="Song Not Found"
+   }
+})
